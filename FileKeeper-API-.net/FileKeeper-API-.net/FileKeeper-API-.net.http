@@ -1,0 +1,6 @@
+@FileKeeper_API_.net_HostAddress = http://localhost:5016
+
+GET {{FileKeeper_API_.net_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
