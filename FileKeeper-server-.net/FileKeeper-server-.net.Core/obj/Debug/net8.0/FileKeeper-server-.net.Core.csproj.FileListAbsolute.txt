@@ -1,0 +1,12 @@
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\bin\Debug\net8.0\FileKeeper-server-.net.Core.deps.json
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\bin\Debug\net8.0\FileKeeper-server-.net.Core.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\bin\Debug\net8.0\FileKeeper-server-.net.Core.pdb
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.sourcelink.json
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\refint\FileKeeper-server-.net.Core.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\FileKeeper-server-.net.Core.pdb
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Core\obj\Debug\net8.0\ref\FileKeeper-server-.net.Core.dll

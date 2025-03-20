@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.AssemblyInfo.cs
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.sourcelink.json

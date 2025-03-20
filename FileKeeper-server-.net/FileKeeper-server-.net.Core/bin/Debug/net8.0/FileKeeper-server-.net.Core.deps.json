@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FileKeeper-server-.net.Core/1.0.0": {
+        "runtime": {
+          "FileKeeper-server-.net.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileKeeper-server-.net.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
