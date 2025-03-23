@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\FileKeeper-server-.net.Data\FileKeeper-server-.net.Data.csproj" />
     <ProjectReference Include="..\FileKeeper-server-.net.Core\FileKeeper-server-.net.Core.csproj" />
+	<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
   </ItemGroup>
 
   <PropertyGroup>

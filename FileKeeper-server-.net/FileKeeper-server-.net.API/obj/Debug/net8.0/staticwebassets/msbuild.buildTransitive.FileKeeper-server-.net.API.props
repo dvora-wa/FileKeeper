@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FileKeeper-server-.net.API.props" />
+</Project>

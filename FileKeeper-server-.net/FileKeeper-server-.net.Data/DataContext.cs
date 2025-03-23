@@ -1,9 +1,8 @@
-using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using FileKeeper_server_.net.Core.Entities;
 //using FileKeeper_server_.net.Core.Interfaces;
 
-namespace FileKeeper_server_.Data
+namespace FileKeeper_server_.net.Data
 {
     public class DataContext : DbContext
     {

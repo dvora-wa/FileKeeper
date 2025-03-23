@@ -1,28 +1,25 @@
-using Core.Interfaces;
-using Data;
 using Microsoft.EntityFrameworkCore;
-using Service;
+using FileKeeper_server_.net.Data;
+using FileKeeper_server_.net.Core.Interfaces.Repositories;
+using FileKeeper_server_.net.Data.Repositories;
+using FileKeeper_server_.net.Core.Interfaces.Services;
+using FileKeeper_server_.net.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+//builder.Services.AddControllers();
 
-// Add services to the container.
-// הוספת DbContext עם חיבור ל-PostgreSQL
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// רישום ה-Repository וה-Service ב-DI
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -30,9 +27,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

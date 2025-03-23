@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using BCrypt.Net-Next;
+using BCrypt.Net;
 using FileKeeper_server_.net.Core.Entities;
-using FileKeeper_server_.net.Core.Interfaces;
+using FileKeeper_server_.net.Core.Interfaces.Repositories;
+using FileKeeper_server_.net.Core.Interfaces.Services;
+using System.Threading.Tasks;
 
 namespace FileKeeper_server_.net.Service.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
 
@@ -27,10 +26,17 @@ namespace FileKeeper_server_.net.Service.Services
             return await _userRepository.GetUserByEmailAsync(email);
         }
 
-        public async Task<bool> RegisterUserAsync(User user, string password)
+        public async Task<bool> RegisterUserAsync(string email, string password)
         {
-            // כאן היינו מוסיפים Hashing לסיסמה (למשל עם BCrypt)
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+            if (await _userRepository.UserExistsAsync(email))
+                return false;
+
+            var user = new User
+            {
+                Email = email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(password)
+            };
+
             await _userRepository.AddUserAsync(user);
             return await _userRepository.SaveChangesAsync();
         }

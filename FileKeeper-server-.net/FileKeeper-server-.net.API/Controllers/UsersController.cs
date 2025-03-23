@@ -1,5 +1,7 @@
-using Core.Entities;
-using Core.Interfaces;
+using FileKeeper_server_.net.Core.Interfaces.Services;
+using FileKeeper_server_.net.Core.Entities;
+//using Core.Entities;
+//using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -27,7 +29,8 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> RegisterUser([FromBody] User user)
         {
-            bool success = await _userService.RegisterUserAsync(user, user.PasswordHash);
+            // שינויים כאן: שלח את ה-email וה-password בנפרד
+            bool success = await _userService.RegisterUserAsync(user.Email, user.PasswordHash);
             if (!success) return BadRequest("Failed to register user");
             return Ok(new { message = "User registered successfully" });
         }

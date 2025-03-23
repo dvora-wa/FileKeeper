@@ -1,11 +1,10 @@
-﻿using Core.Entities;
-using Core.Interfaces;
+﻿using FileKeeper_server_.net.Core.Entities;
+using FileKeeper_server_.net.Core.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-using FileKeeper_server_.net.Core.Entities;
-using FileKeeper_server_.net.Core.Interfaces;
+using FileKeeper_server_.net.Data;
 
-namespace FileKeeper_server_Data.Repositories
+namespace FileKeeper_server_.net.Data.Repositories
 {
     public class UserRepository : IUserRepository
     {

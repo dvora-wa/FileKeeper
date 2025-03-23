@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileKeeper-server-.net.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1edc347c4bbe9111aad388a8b047e17a877a20aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b73cbe22b9a8c5cb310daaefe185b9019309e0fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileKeeper-server-.net.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileKeeper-server-.net.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
