@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.415.26" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
     <ProjectReference Include="..\FileKeeper-server-.net.Core\FileKeeper-server-.net.Core.csproj" />
 	<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
   </ItemGroup>

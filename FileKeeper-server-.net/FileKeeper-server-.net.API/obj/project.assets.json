@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AWSSDK.Core/3.7.402.27": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.415.26": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.402.27, 4.0.0)"
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -650,6 +679,26 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -1759,7 +1808,9 @@
         "dependencies": {
           "FileKeeper-server-.net.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
+          "Microsoft.Extensions.Configuration": "9.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "compile": {
           "bin/placeholder/FileKeeper-server-.net.Data.dll": {}
@@ -1772,8 +1823,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AWSSDK.S3": "3.7.415.26",
           "BCrypt.Net-Next": "4.0.3",
-          "FileKeeper-server-.net.Core": "1.0.0"
+          "FileKeeper-server-.net.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Configuration": "9.0.3"
         },
         "compile": {
           "bin/placeholder/FileKeeper-server-.net.Service.dll": {}
@@ -1785,6 +1839,67 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.7.402.27": {
+      "sha512": "VV/o4u1s+AOHp7cl8pMZzr7/jJzy0QHap0g+/K6GKoemHDzV1cYQcHEErwfIk0tl3SKStbOATow8LMl3pv6Ljg==",
+      "type": "package",
+      "path": "awssdk.core/3.7.402.27",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.402.27.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/net8.0/AWSSDK.Core.dll",
+        "lib/net8.0/AWSSDK.Core.pdb",
+        "lib/net8.0/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.S3/3.7.415.26": {
+      "sha512": "6oyQ0QyFK6+fNktoCaHleyXSUtPNrvV+CJSiEcMGkheOTWr9hqOOzmfdjeSJkI+XZLJvW3U2WW5kWohS1i3W5g==",
+      "type": "package",
+      "path": "awssdk.s3/3.7.415.26",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.s3.3.7.415.26.nupkg.sha512",
+        "awssdk.s3.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.pdb",
+        "lib/net35/AWSSDK.S3.xml",
+        "lib/net45/AWSSDK.S3.dll",
+        "lib/net45/AWSSDK.S3.pdb",
+        "lib/net45/AWSSDK.S3.xml",
+        "lib/net8.0/AWSSDK.S3.dll",
+        "lib/net8.0/AWSSDK.S3.pdb",
+        "lib/net8.0/AWSSDK.S3.xml",
+        "lib/netcoreapp3.1/AWSSDK.S3.dll",
+        "lib/netcoreapp3.1/AWSSDK.S3.pdb",
+        "lib/netcoreapp3.1/AWSSDK.S3.xml",
+        "lib/netstandard2.0/AWSSDK.S3.dll",
+        "lib/netstandard2.0/AWSSDK.S3.pdb",
+        "lib/netstandard2.0/AWSSDK.S3.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -3399,6 +3514,34 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/9.0.3": {
+      "sha512": "RIEeZxWYm77+OWLwgik7DzSVSONjqkmcbuCb1koZdGAV7BgOUWnLz80VMyHZMw3onrVwFCCMHBBdruBPuQTvkg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net9.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net9.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.9.0.3.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -5327,6 +5470,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AWSSDK.S3 >= 3.7.415.26",
       "BCrypt.Net-Next >= 4.0.3",
       "FileKeeper-server-.net.Core >= 1.0.0",
       "FileKeeper-server-.net.Data >= 1.0.0",
@@ -5346,11 +5490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
       "projectName": "FileKeeper-server-.net.API",
-      "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
+      "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5371,14 +5515,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
+            "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj"
+            "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj"
             },
-            "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
-              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj"
+            "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj"
             }
           }
         }
@@ -5393,12 +5537,16 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AWSSDK.S3": {
+            "target": "Package",
+            "version": "[3.7.415.26, )"
+          },
           "BCrypt.Net-Next": {
             "target": "Package",
             "version": "[4.0.3, )"
@@ -5451,7 +5599,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

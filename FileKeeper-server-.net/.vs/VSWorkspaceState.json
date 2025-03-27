@@ -2,15 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\FileKeeper-server-.net.API",
-    "\\FileKeeper-server-.net.API\\Controllers",
     "\\FileKeeper-server-.net.Core",
-    "\\FileKeeper-server-.net.Core\\Interfaces",
-    "\\FileKeeper-server-.net.Core\\Interfaces\\Repositories",
-    "\\FileKeeper-server-.net.Core\\Interfaces\\Services",
+    "\\FileKeeper-server-.net.Data",
     "\\FileKeeper-server-.net.Data\\Repositories",
     "\\FileKeeper-server-.net.Service",
     "\\FileKeeper-server-.net.Service\\Services"
   ],
-  "SelectedNode": "\\FileKeeper-server-.net.API\\Program.cs",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\FileKeeper-server-.net.API\\obj",
+  "PreviewInSolutionExplorer": true
 }

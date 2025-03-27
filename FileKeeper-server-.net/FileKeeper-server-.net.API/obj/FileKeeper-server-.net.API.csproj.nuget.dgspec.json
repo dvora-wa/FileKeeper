@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj": {}
+    "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj": {
+    "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
         "projectName": "FileKeeper-server-.net.API",
-        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
               },
-              "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj"
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj"
               },
-              "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj"
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj"
               }
             }
           }
@@ -54,12 +54,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.415.26, )"
+            },
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
@@ -112,18 +116,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
+    "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj",
         "projectName": "FileKeeper-server-.net.Core",
-        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,7 +160,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -177,18 +181,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
+    "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
         "projectName": "FileKeeper-server-.net.Data",
-        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -209,8 +213,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
               }
             }
           }
@@ -225,7 +229,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -250,6 +254,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -268,18 +280,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
+    "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj",
         "projectName": "FileKeeper-server-.net.Service",
-        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\FileKeeper-server-.net.Service.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Service\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -300,8 +312,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
-                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
               }
             }
           }
@@ -316,15 +328,27 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.415.26, )"
+            },
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -343,7 +367,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

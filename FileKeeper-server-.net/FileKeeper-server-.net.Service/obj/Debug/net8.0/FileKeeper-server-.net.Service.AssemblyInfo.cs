@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileKeeper-server-.net.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b73cbe22b9a8c5cb310daaefe185b9019309e0fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8da101751588ecc247425aeea15062e00607ccd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileKeeper-server-.net.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileKeeper-server-.net.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

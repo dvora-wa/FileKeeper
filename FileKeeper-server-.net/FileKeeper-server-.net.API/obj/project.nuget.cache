@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TeKAVAKX5ak=",
+  "dgSpecHash": "JDvNQwtAfCg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.API\\FileKeeper-server-.net.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\awssdk.core\\3.7.402.27\\awssdk.core.3.7.402.27.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\awssdk.s3\\3.7.415.26\\awssdk.s3.3.7.415.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -30,6 +32,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",

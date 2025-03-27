@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VZfUfe9UV6c=",
+  "dgSpecHash": "3FYdVCdhxfg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\FileKeeper\\1FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -28,6 +28,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.3\\microsoft.entityframeworkcore.tools.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.3\\microsoft.extensions.configuration.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
@@ -49,6 +50,8 @@
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

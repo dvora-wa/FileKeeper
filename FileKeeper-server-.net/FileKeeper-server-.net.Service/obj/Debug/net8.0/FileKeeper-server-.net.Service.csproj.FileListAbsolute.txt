@@ -20,3 +20,13 @@ C:\Users\USER\Desktop\FileKeeper\1FileKeeper-server-.net\FileKeeper-server-.net.
 C:\Users\USER\Desktop\FileKeeper\1FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\refint\FileKeeper-server-.net.Service.dll
 C:\Users\USER\Desktop\FileKeeper\1FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.pdb
 C:\Users\USER\Desktop\FileKeeper\1FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\ref\FileKeeper-server-.net.Service.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\bin\Debug\net8.0\FileKeeper-server-.net.Service.deps.json
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\bin\Debug\net8.0\FileKeeper-server-.net.Service.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\bin\Debug\net8.0\FileKeeper-server-.net.Service.pdb
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\bin\Debug\net8.0\FileKeeper-server-.net.Core.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\bin\Debug\net8.0\FileKeeper-server-.net.Core.pdb
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeep.636BFBB1.Up2Date
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\refint\FileKeeper-server-.net.Service.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\FileKeeper-server-.net.Service.pdb
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.Service\obj\Debug\net8.0\ref\FileKeeper-server-.net.Service.dll
