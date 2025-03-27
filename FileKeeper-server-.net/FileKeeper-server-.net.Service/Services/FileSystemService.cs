@@ -7,28 +7,32 @@ using FileKeeper_server_.net.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Amazon.Runtime;
+using Amazon; // הוספנו את זה - חשוב! זה פותר את שגיאת RegionEndpoint
 
 namespace FileKeeper_server_.net.Service.Services
 {
-    public class FileSystemService : IFileSystemService
+    public class FileSystemService : IFileSystemService, IDisposable
     {
-        private readonly ApplicationDbContext _context;
+        private readonly DataContext _context;
         private readonly IAmazonS3 _s3Client;
-        private readonly string _bucketName;
+        private readonly string _bucketName = string.Empty; // אתחול ערך ברירת מחדל
 
-        public FileSystemService(
-            ApplicationDbContext context,
-            IConfiguration configuration)
+        public FileSystemService(DataContext context, IConfiguration configuration)
         {
             _context = context;
 
-            var credentials = new BasicAWSCredentials(
-                configuration["AWS:AccessKey"],
-                configuration["AWS:SecretKey"]
-            );
+            // בדיקות null והגדרת ערכי ברירת מחדל
+            var awsAccessKey = configuration["AWS:AccessKey"] ??
+                throw new InvalidOperationException("AWS:AccessKey is not configured");
+            var awsSecretKey = configuration["AWS:SecretKey"] ??
+                throw new InvalidOperationException("AWS:SecretKey is not configured");
+            var awsRegion = configuration["AWS:Region"] ??
+                throw new InvalidOperationException("AWS:Region is not configured");
+            _bucketName = configuration["AWS:BucketName"] ??
+                throw new InvalidOperationException("AWS:BucketName is not configured");
 
-            _s3Client = new AmazonS3Client(credentials, RegionEndpoint.GetBySystemName(configuration["AWS:Region"]));
-            _bucketName = configuration["AWS:BucketName"];
+            var credentials = new BasicAWSCredentials(awsAccessKey, awsSecretKey);
+            _s3Client = new AmazonS3Client(credentials, RegionEndpoint.GetBySystemName(awsRegion));
         }
 
         // קבלת כל התיקיות של המשתמש בתיקייה מסוימת
@@ -69,6 +73,12 @@ namespace FileKeeper_server_.net.Service.Services
         // יצירת תיקייה חדשה
         public async Task<FolderDto> CreateFolderAsync(CreateFolderDto dto, int userId)
         {
+            if (string.IsNullOrEmpty(dto.Name))
+                throw new InvalidOperationException("שם התיקייה לא יכול להיות ריק");
+
+            if (dto.Name.Length > 255)
+                throw new InvalidOperationException("שם התיקייה ארוך מדי");
+
             if (dto.ParentFolderId.HasValue)
             {
                 var parentExists = await _context.Folders
@@ -106,6 +116,12 @@ namespace FileKeeper_server_.net.Service.Services
         // קבלת URL להעלאת קובץ ל-S3
         public async Task<string> GetUploadUrlAsync(string fileName, Guid folderId, int userId)
         {
+            if (string.IsNullOrEmpty(fileName))
+                throw new InvalidOperationException("שם הקובץ לא יכול להיות ריק");
+
+            if (fileName.Length > 255)
+                throw new InvalidOperationException("שם הקובץ ארוך מדי");
+
             var folderExists = await _context.Folders
                 .AnyAsync(f => f.Id == folderId && f.UserId == userId);
             if (!folderExists)
@@ -200,6 +216,31 @@ namespace FileKeeper_server_.net.Service.Services
             };
 
             await _s3Client.DeleteObjectAsync(deleteRequest);
+        }
+
+        private bool _disposed;
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposed)
+            {
+                if (disposing)
+                {
+                    _s3Client?.Dispose();
+                }
+                _disposed = true;
+            }
+        }
+
+        ~FileSystemService()
+        {
+            Dispose(false);
         }
     }
 }

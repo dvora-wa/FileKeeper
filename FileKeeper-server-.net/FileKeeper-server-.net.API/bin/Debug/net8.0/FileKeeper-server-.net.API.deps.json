@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "FileKeeper-server-.net.API/1.0.0": {
         "dependencies": {
-          "AWSSDK.S3": "3.7.415.24",
+          "AWSSDK.S3": "3.7.415.26",
           "BCrypt.Net-Next": "4.0.3",
           "FileKeeper-server-.net.Core": "1.0.0",
           "FileKeeper-server-.net.Data": "1.0.0",
@@ -24,22 +24,22 @@
           "FileKeeper-server-.net.API.dll": {}
         }
       },
-      "AWSSDK.Core/3.7.402.25": {
+      "AWSSDK.Core/3.7.402.27": {
         "runtime": {
           "lib/net8.0/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.402.25"
+            "fileVersion": "3.7.402.27"
           }
         }
       },
-      "AWSSDK.S3/3.7.415.24": {
+      "AWSSDK.S3/3.7.415.26": {
         "dependencies": {
-          "AWSSDK.Core": "3.7.402.25"
+          "AWSSDK.Core": "3.7.402.27"
         },
         "runtime": {
           "lib/net8.0/AWSSDK.S3.dll": {
             "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.7.415.24"
+            "fileVersion": "3.7.415.26"
           }
         }
       },
@@ -556,6 +556,18 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/9.0.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Primitives": "9.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.325.11113"
           }
@@ -1157,6 +1169,7 @@
           "FileKeeper-server-.net.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
+          "Microsoft.Extensions.Configuration": "9.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "runtime": {
@@ -1168,8 +1181,12 @@
       },
       "FileKeeper-server-.net.Service/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.415.26",
           "BCrypt.Net-Next": "4.0.3",
-          "FileKeeper-server-.net.Core": "1.0.0"
+          "FileKeeper-server-.net.Core": "1.0.0",
+          "FileKeeper-server-.net.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.Extensions.Configuration": "9.0.3"
         },
         "runtime": {
           "FileKeeper-server-.net.Service.dll": {
@@ -1186,19 +1203,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AWSSDK.Core/3.7.402.25": {
+    "AWSSDK.Core/3.7.402.27": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NCbho/muk9knZ70dOlKBhIB0WLxKwg/TzElYj5jVBJUEFx/p/lmGhMvTEGof42Xtr1VjJ0FdZDPl4BarRaKHQA==",
-      "path": "awssdk.core/3.7.402.25",
-      "hashPath": "awssdk.core.3.7.402.25.nupkg.sha512"
+      "sha512": "sha512-VV/o4u1s+AOHp7cl8pMZzr7/jJzy0QHap0g+/K6GKoemHDzV1cYQcHEErwfIk0tl3SKStbOATow8LMl3pv6Ljg==",
+      "path": "awssdk.core/3.7.402.27",
+      "hashPath": "awssdk.core.3.7.402.27.nupkg.sha512"
     },
-    "AWSSDK.S3/3.7.415.24": {
+    "AWSSDK.S3/3.7.415.26": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+kNJcCUdnxKBbGobu900ln0KuX093m6vlwQU5GyXq41OJmkS1PEfH/OmUbMLRh/aG5QOFM0JojfAsMF3tkPKNQ==",
-      "path": "awssdk.s3/3.7.415.24",
-      "hashPath": "awssdk.s3.3.7.415.24.nupkg.sha512"
+      "sha512": "sha512-6oyQ0QyFK6+fNktoCaHleyXSUtPNrvV+CJSiEcMGkheOTWr9hqOOzmfdjeSJkI+XZLJvW3U2WW5kWohS1i3W5g==",
+      "path": "awssdk.s3/3.7.415.26",
+      "hashPath": "awssdk.s3.3.7.415.26.nupkg.sha512"
     },
     "Azure.Core/1.38.0": {
       "type": "package",
@@ -1381,6 +1398,13 @@
       "sha512": "sha512-TXggBGDDd6r+J7FV09plXpzGmWcknVyoDsHlY2qcCbcAhmb0eH7Q9IkfIZl54/zEedVTa9jPgiPFTxH9WuCGMQ==",
       "path": "microsoft.extensions.caching.memory/9.0.3",
       "hashPath": "microsoft.extensions.caching.memory.9.0.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RIEeZxWYm77+OWLwgik7DzSVSONjqkmcbuCb1koZdGAV7BgOUWnLz80VMyHZMw3onrVwFCCMHBBdruBPuQTvkg==",
+      "path": "microsoft.extensions.configuration/9.0.3",
+      "hashPath": "microsoft.extensions.configuration.9.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
       "type": "package",

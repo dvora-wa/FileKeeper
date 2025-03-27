@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup>
-    <PackageReference Include="AWSSDK.S3" Version="3.7.415.26" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
-    <ProjectReference Include="..\FileKeeper-server-.net.Core\FileKeeper-server-.net.Core.csproj" />
-	<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AWSSDK.S3" Version="3.7.415.26" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
+		<ProjectReference Include="..\FileKeeper-server-.net.Core\FileKeeper-server-.net.Core.csproj" />
+		<ProjectReference Include="..\FileKeeper-server-.net.Data\FileKeeper-server-.net.Data.csproj" />
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+	</ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>FileKeeper_server_.net.Service</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>FileKeeper_server_.net.Service</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
 </Project>

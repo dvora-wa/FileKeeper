@@ -314,6 +314,9 @@
             "projectReferences": {
               "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj": {
                 "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Core\\FileKeeper-server-.net.Core.csproj"
+              },
+              "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj": {
+                "projectPath": "C:\\Users\\USER\\Desktop\\FileKeeper\\FileKeeper-server-.net\\FileKeeper-server-.net.Data\\FileKeeper-server-.net.Data.csproj"
               }
             }
           }

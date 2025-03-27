@@ -1826,6 +1826,7 @@
           "AWSSDK.S3": "3.7.415.26",
           "BCrypt.Net-Next": "4.0.3",
           "FileKeeper-server-.net.Core": "1.0.0",
+          "FileKeeper-server-.net.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.Extensions.Configuration": "9.0.3"
         },

@@ -362,3 +362,4 @@ C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.A
 C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.API\obj\Debug\net8.0\ref\FileKeeper-server-.net.API.dll
 C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.API\bin\Debug\net8.0\AWSSDK.Core.dll
 C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.API\bin\Debug\net8.0\AWSSDK.S3.dll
+C:\Users\USER\Desktop\FileKeeper\FileKeeper-server-.net\FileKeeper-server-.net.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
