@@ -15,40 +15,50 @@ namespace FileKeeper_server_.net.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // הגדרות קיימות ל-User
-            modelBuilder.Entity<User>()
-                .Property(u => u.Id)
-                .UseIdentityColumn();
+            // User Configuration
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Email).IsRequired();
+                entity.HasIndex(e => e.Email).IsUnique();
+            });
 
-            // הגדרות אינדקסים לטבלאות החדשות
-            modelBuilder.Entity<Folder>()
-                .HasIndex(f => new { f.UserId, f.ParentFolderId });
+            // Folder Configuration
+            modelBuilder.Entity<Folder>(entity =>
+            {
+                entity.HasKey(e => e.Id);
 
-            modelBuilder.Entity<FileItem>()
-                .HasIndex(f => new { f.UserId, f.FolderId });
+                // קשר למשתמש
+                entity.HasOne(f => f.User)
+                    .WithMany(u => u.Folders)
+                    .HasForeignKey(f => f.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-            // הגדרת קשרים
-            modelBuilder.Entity<Folder>()
-                .HasOne<User>()
-                .WithMany()
-                .HasForeignKey(f => f.UserId);
+                // קשר לתיקיית אב
+                entity.HasOne(f => f.ParentFolder)
+                    .WithMany(f => f.SubFolders)
+                    .HasForeignKey(f => f.ParentFolderId)
+                    .IsRequired(false)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
 
-            modelBuilder.Entity<Folder>()
-                .HasOne<Folder>()
-                .WithMany(f => f.SubFolders)
-                .HasForeignKey(f => f.ParentFolderId)
-                .OnDelete(DeleteBehavior.Restrict);
+            // FileItem Configuration
+            modelBuilder.Entity<FileItem>(entity =>
+            {
+                entity.HasKey(e => e.Id);
 
-            modelBuilder.Entity<FileItem>()
-                .HasOne<User>()
-                .WithMany()
-                .HasForeignKey(f => f.UserId);
+                // קשר למשתמש
+                entity.HasOne(f => f.User)
+                    .WithMany(u => u.Files)
+                    .HasForeignKey(f => f.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<FileItem>()
-                .HasOne<Folder>()
-                .WithMany(f => f.Files)
-                .HasForeignKey(f => f.FolderId)
-                .OnDelete(DeleteBehavior.Cascade);
+                // קשר לתיקייה
+                entity.HasOne(f => f.Folder)
+                    .WithMany(f => f.Files)
+                    .HasForeignKey(f => f.FolderId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
         }
     }
 }

@@ -1,12 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FileKeeper-server-.net.API",
-    "\\FileKeeper-server-.net.API\\Middleware",
-    "\\FileKeeper-server-.net.Data\\Repositories",
-    "\\FileKeeper-server-.net.Service",
-    "\\FileKeeper-server-.net.Service\\Services"
+    "\\FileKeeper-server-.net.Data",
+    "\\FileKeeper-server-.net.Data\\Migrations",
+    "\\FileKeeper-server-.net.Data\\Repositories"
   ],
-  "SelectedNode": "\\FileKeeper-server-.net.API\\Program.cs",
+  "SelectedNode": "\\FileKeeper-server-.net.Data\\Migrations\\DataContextModelSnapshot.cs",
   "PreviewInSolutionExplorer": true
 }

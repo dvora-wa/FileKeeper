@@ -1,8 +1,6 @@
-﻿using FileKeeper_server_.net.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using FileKeeper_server_.net.Core.Entities;
 using FileKeeper_server_.net.Core.Interfaces.Repositories;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using FileKeeper_server_.net.Data;
 
 namespace FileKeeper_server_.net.Data.Repositories
 {
@@ -15,29 +13,39 @@ namespace FileKeeper_server_.net.Data.Repositories
             _context = context;
         }
 
-        public async Task<User?> GetUserByIdAsync(int id)
+        public async Task<User?> GetByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
         }
 
-        public async Task<User?> GetUserByEmailAsync(string email)
+        public async Task<User?> GetByEmailAsync(string email)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            return await _context.Users
+                .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
         }
 
-        public async Task<bool> UserExistsAsync(string email)
+        public async Task<IEnumerable<User>> GetAllAsync()
         {
-            return await _context.Users.AnyAsync(u => u.Email == email);
+            return await _context.Users.ToListAsync();
         }
 
-        public async Task AddUserAsync(User user)
+        public async Task<User> AddAsync(User user)
         {
             await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+            return user;
         }
 
-        public async Task<bool> SaveChangesAsync()
+        public async Task UpdateAsync(User user)
         {
-            return await _context.SaveChangesAsync() > 0;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(User user)
+        {
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
         }
     }
 }

@@ -15,6 +15,7 @@ build/
 *.user
 *.userosscache
 *.sln.docstates
+appsettings.Development.json
 
 # Temporary files
 *.tmp
