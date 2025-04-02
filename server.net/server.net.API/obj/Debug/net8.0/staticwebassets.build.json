@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "DYjq5GwO8bmH/v4kSGYb6HVP5kBaoIWrhkelBbh+K1E=",
+  "Source": "server.net.API",
+  "BasePath": "_content/server.net.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
