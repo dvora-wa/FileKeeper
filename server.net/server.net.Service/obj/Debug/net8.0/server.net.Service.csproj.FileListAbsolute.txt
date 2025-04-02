@@ -1,0 +1,17 @@
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Service.deps.json
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Service.dll
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Service.pdb
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Core.dll
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Data.dll
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Core.pdb
+C:\Users\USER\Desktop\server.net\server.net.Service\bin\Debug\net8.0\server.net.Data.pdb
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.AssemblyInfo.cs
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.n.1A10289D.Up2Date
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.dll
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\refint\server.net.Service.dll
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\server.net.Service.pdb
+C:\Users\USER\Desktop\server.net\server.net.Service\obj\Debug\net8.0\ref\server.net.Service.dll
